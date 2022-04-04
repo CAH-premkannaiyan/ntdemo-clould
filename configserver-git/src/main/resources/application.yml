@@ -1,0 +1,16 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/CAH-premkannaiyan/pluralsight-spring-cloudconfig-wa-tolls-2
+          search-paths:
+            - station*
+          repos:
+              perf:
+                pattern: '*/perf'
+                uri: https://github.com/CAH-premkannaiyan/pluralsight-spring-cloudconfig-wa-tolls-perf-2
+                search-paths:
+                  - 'station*'
